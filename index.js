@@ -3,9 +3,6 @@
 module.exports = withoutKeys;
 
 function withoutKeys(obj, keys){
-	if (!keys)
-		return obj;
-
 	var k = {};
 	Object.keys(obj).forEach(function( key ){
 		if (!~keys.indexOf(key))

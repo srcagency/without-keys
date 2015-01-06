@@ -24,9 +24,9 @@ test('without-keys', function( t ){
 	t.test('keys: no parameter', function( t ){
 		t.plan(1);
 
-		var obj = withoutKeys(foo);
-
-		t.deepEqual(foo, obj);
+		t.throws(function(){
+			withoutKeys(foo);
+		});
 	});
 
 	t.test('keys: empty array', function( t ){
