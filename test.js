@@ -26,7 +26,7 @@ test('without-keys', function( t ){
 
 		var obj = withoutKeys(foo);
 
-		t.deepEqual(obj, obj);
+		t.deepEqual(foo, obj);
 	});
 
 	t.test('keys: empty array', function( t ){
@@ -34,7 +34,7 @@ test('without-keys', function( t ){
 
 		var obj = withoutKeys(foo, []);
 
-		t.deepEqual(obj, obj);
+		t.deepEqual(foo, obj);
 	});
 
 	t.test('keys: wrong', function( t ){
@@ -42,7 +42,7 @@ test('without-keys', function( t ){
 
 		var obj = withoutKeys(foo, ['d']);
 
-		t.deepEqual(obj, obj);
+		t.deepEqual(foo, obj);
 	});
 
 	t.test('keys: not array', function( t ){
@@ -50,6 +50,6 @@ test('without-keys', function( t ){
 
 		var obj = withoutKeys(foo, 'd');
 
-		t.deepEqual(obj, obj);
+		t.deepEqual(foo, obj);
 	});
 });
