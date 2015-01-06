@@ -1,7 +1,7 @@
 'use strict';
 
 var withoutKeys = require('./index.js');
-var test = require('tap').test;
+var test = require('tape');
 
 test('without-keys', function( t ){
 	var foo = {
