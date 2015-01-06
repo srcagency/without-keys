@@ -1,0 +1,17 @@
+{
+	"name": "without-keys",
+	"version": "0.0.1",
+	"description": "returns a new object with modified keys based on the 'keys' parameter",
+	"main": "index.js",
+	"scripts": {
+		"test": "node test.js"
+	},
+	"author": {
+		"name": "René T. Nielsen",
+		"email": "rene@src.agency"
+	},
+  	"license": "MIT",
+  	"devDependencies": {
+  		"tap": "*"
+  	}
+}
