@@ -52,4 +52,12 @@ test('without-keys', function( t ){
 
 		t.deepEqual(foo, obj);
 	});
+
+	t.test('keys: without all', function( t ){
+		t.plan(1);
+
+		var obj = withoutKeys(foo, ['a', 'b', 'c']);
+
+		t.deepEqual(obj, {});
+	});
 });
