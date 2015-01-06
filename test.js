@@ -37,7 +37,7 @@ test('without-keys', function( t ){
 		t.deepEqual(foo, obj);
 	});
 
-	t.test('keys: wrong', function( t ){
+	t.test('keys: not present', function( t ){
 		t.plan(1);
 
 		var obj = withoutKeys(foo, ['d']);
