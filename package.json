@@ -2,6 +2,10 @@
 	"name": "without-keys",
 	"version": "0.0.1",
 	"description": "returns a new object with modified keys based on the 'keys' parameter",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:srcagency/without-keys.git"
+	},
 	"scripts": {
 		"test": "node test.js"
 	},
