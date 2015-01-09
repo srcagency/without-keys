@@ -1,6 +1,6 @@
 {
 	"name": "without-keys",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Returns a new object without the keys passed as second parameter, and without modifying the first object",
 	"repository": {
 		"type": "git",
