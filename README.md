@@ -5,8 +5,7 @@ Returns a new object without the keys passed as second parameter, and without mo
 ## Installation
 
 ```
-  // npm
-  $ npm install without-keys
+$ npm install without-keys
 ```
 
 ## API
@@ -14,15 +13,15 @@ Returns a new object without the keys passed as second parameter, and without mo
 ```javascript
 withoutKeys = require('without-keys')
 
-var obj = {
-  a: "René",
-  b: "Nielsen",
-  c: "info@domain.com"
+var company = {
+    name: 'Blanca Benson',
+    phone: '+1 (850) 515-3813',
+    address: '661 Congress Street - Wanship - Northern Mariana Islands 717'
 };
 
-var k = withoutKeys(obj, ['c']) // { a: "René", b: "Nielsen" }
+withoutKeys(company, ['address']) // {  name: 'Blanca Benson',  phone: '+1 (850) 515-3813' }
 ```
 
 ## License
 
-MIT
+[MIT](http://opensource.org/licenses/MIT) © René Nielsen @ [src.agency](http://src.agency)
